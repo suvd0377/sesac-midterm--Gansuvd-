@@ -22,25 +22,24 @@
 
 @media screen and (max-width: 540px) {
   .container {
-    width: 100%;
+    width: 200px;
   }
-  .container1 {
-    width: 100%;
-  }
-  .container2 {
-    width: 100%;
-  }
-  .container3 {
-    width: 100%;
-  }
+
   #header {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 960px) {
+  .container {
+    width: 100%;
+  }
   body {
     width: 800px;
   }

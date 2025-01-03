@@ -1,9 +1,6 @@
 /* 1. https://jsonplaceholder.typicode.com/todos 로부터 데이터를 불러와서 추가해주는 함수 getTodos() 선언 */
 // getTodos()는 추후에 HTML DOM 내용이 완전히 로드되었을 때 실행되어야 합니다.
 async function getTodos() {
-  window.addEventListener("DOMContentLoaded", () => {
-    console.log("success");
-  });
   try {
     await axios
       .get("https://jsonplaceholder.typicode.com/todos")
@@ -13,6 +10,9 @@ async function getTodos() {
   } catch (error) {
     console.log("error!!!");
   }
+  window.addEventListener("DOMContentLoaded", () => {
+    console.log("success");
+  });
 }
 return (
   <div class="container">
@@ -78,3 +78,13 @@ return (
     </div>
   </div>
 );
+
+function getCheckboxValue(event) {
+  let result = "";
+  if (event.target.checked) {
+    result = event.target.value;
+  } else {
+    result = "";
+  }
+  document.getElementById("result").innerText = result;
+}
