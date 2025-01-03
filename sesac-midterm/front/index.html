@@ -4,17 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>간솝드</title>
+    <link rel="stylesheet" href="./public/index.css" />
+    <script defer src="./public/index.js"></script>
   </head>
   <body>
-    <header>
-      <a href="./public/codingon.png"></a>
-      <h2>Todo List</h2>
-    </header>
-    <input type="text" placeholder="today's todo" />
-    <button type="submit">작성</button>
+    <div class="wrap">
+      <header id="header">
+        <a href="./public/codingon.png"></a>
+        <h2>Todo List</h2>
+      </header>
+      <section id="section">
+        <div class="addTodo">
+          <input type="text" class="todo" placeholder="today's todo" />
+          <button type="button" class="input_btn">작성</button>
+        </div>
 
-    <br />
-    <input type="checkbox" />
-    <button type="button">X</button>
+        <br />
+        <div class="container">
+          <div class="getTodos">
+            <input type="checkbox" /><textarea readonly>
+delectus aut autem</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+quis ut nam facilis et officia qui</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+fugiat veniam minus</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+et porro tempora</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+laboriosam mollitia et enim quasi adipisci quia provident illum</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+qui ullam ratione quibusdam voluptatem quia omnis</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+illo expedita consequatur quia in</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+quo adipisci enim quam ut ab</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+molestiae perspiciatis ipsa"</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+            <input type="checkbox" /><textarea readonly>
+illo est ratione doloremque quia maiores aut</textarea
+            >
+            <button type="button" class="deleteTodo">X</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

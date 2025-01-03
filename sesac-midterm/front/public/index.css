@@ -4,7 +4,7 @@
   --main-color: #04c82f;
   --main-bg-color: #e5ffeb;
 }
-header {
+#header {
   background-color: #04c82f;
 }
 * {
@@ -20,5 +20,28 @@ header {
   - (배점 0.5점) 헤더, 입력창, Todo 목록을 포함하는 요소의 최대 너비는 `800px` 입니다.
     > 힌트. `max-width` 속성 */
 
-@media screen {
+@media screen and (max-width: 540px) {
+  .container {
+    width: 100%;
+  }
+  .container1 {
+    width: 100%;
+  }
+  .container2 {
+    width: 100%;
+  }
+  .container3 {
+    width: 100%;
+  }
+  #header {
+  }
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    width: 800px;
+  }
 }
