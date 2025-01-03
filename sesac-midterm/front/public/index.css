@@ -21,24 +21,24 @@
     > 힌트. `max-width` 속성 */
 
 @media screen and (max-width: 540px) {
-  .container {
-    width: 200px;
+  .container > div {
+    width: 540px;
   }
 
   #header {
-    width: 100%;
+    width: 540px;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .container {
-    width: 100%;
+  .container > div {
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .container {
-    width: 100%;
+  .container > div {
+    width: 240px;
   }
   body {
     width: 800px;
